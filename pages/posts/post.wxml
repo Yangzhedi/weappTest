@@ -1,5 +1,5 @@
 <view>
-    <swiper indicator-dots="true" autoplay="true" interval="2000">
+    <swiper indicator-dots="true" autoplay="true" interval="5000">
         <swiper-item>
             <image src="/images/avatar.jpg"></image>
         </swiper-item>
@@ -10,4 +10,19 @@
             <image src="/images/avatar.jpg"></image>
         </swiper-item>
     </swiper>
+    <view>
+        <view>
+            <image src="/images/avatar.jpg"></image>
+            <text> Nov 15 2016</text>
+        </view>
+        <text>这里是一个标题。</text>
+        <image src="/images/avatar.jpg"></image>
+        <text>这里都是文章简介，这里都是文章简介，这里都是文章简介。</text>
+        <view>
+            <image src="/images/avatar.jpg"></image>
+            <text>92</text>
+            <image src="/images/avatar.jpg"></image>
+            <text>65</text>
+        </view>
+    </view>
 </view>
