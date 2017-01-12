@@ -1,28 +1,32 @@
 <view>
     <swiper indicator-dots="true" autoplay="true" interval="5000">
         <swiper-item>
-            <image src="/images/avatar.jpg"></image>
+            <image src="/images/wx.png"></image>
         </swiper-item>
         <swiper-item>
-            <image src="/images/avatar.jpg"></image>
+            <image src="/images/vr.png"></image>
         </swiper-item>
         <swiper-item>
-            <image src="/images/avatar.jpg"></image>
+            <image src="/images/iqiyi.png"></image>
         </swiper-item>
     </swiper>
-    <view>
-        <view>
-            <image src="/images/avatar.jpg"></image>
-            <text> Nov 15 2016</text>
+    <!--文章开始-->
+    <block wx:for="{{posts_content}}" wx:for-item="item" wx:for-index="idx">   
+        <view  class="post-container">
+            <view class="post-author-date">
+                <image class="post-author" src="{{item.author_img}}"></image>
+                <text class="post-date">{{item.date}} 第{{idx+1}}篇文章</text>
+            </view>
+            <text class="post-title">{{item.title}}</text>
+            <image class="post-image" src="{{item.post_img}}"></image>
+            <text class="post-content">{{item.content}}</text>
+            <view class="post-like">
+                <image class="post-like-image" src="../../images/icon/chat.png"></image>
+                <text class="post-like-font">{{item.collect_num}}</text>
+                <image class="post-like-image" src="/images/icon/view.png"></image>
+                <text class="post-like-font">{{item.view_num}}</text>
+            </view>
         </view>
-        <text>这里是一个标题。</text>
-        <image src="/images/avatar.jpg"></image>
-        <text>这里都是文章简介，这里都是文章简介，这里都是文章简介。</text>
-        <view>
-            <image src="/images/avatar.jpg"></image>
-            <text>92</text>
-            <image src="/images/avatar.jpg"></image>
-            <text>65</text>
-        </view>
-    </view>
+    </block>   
+    <!--文章结束-->
 </view>
