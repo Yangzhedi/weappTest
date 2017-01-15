@@ -1,3 +1,4 @@
+<import src="post-item/post-item-template.wxml"/>
 <view>
     <swiper indicator-dots="true" autoplay="true" interval="5000">
         <swiper-item>
@@ -10,9 +11,10 @@
             <image src="/images/iqiyi.png"></image>
         </swiper-item>
     </swiper>
+
     <!--文章开始-->
-    <block wx:for="{{posts_content}}" wx:for-item="item" wx:for-index="idx">   
-        <view  class="post-container">
+    <block wx:for="{{posts_content}}" wx:for-item="item" wx:for-index="idx">
+        <!--<view class="post-container">
             <view class="post-author-date">
                 <image class="post-author" src="{{item.avatar}}"></image>
                 <text class="post-date">{{item.date}} 第{{idx+1}}篇文章</text>
@@ -26,7 +28,11 @@
                 <image class="post-like-image" src="/images/icon/view.png"></image>
                 <text class="post-like-font">{{item.reading}}</text>
             </view>
+        </view>-->
+        <view catchtap="onPostTap" data-postId="{{item.postId}}">
+            <!--template-->
+            <template is="postItem" data="{{...item,idx}}" />
         </view>
-    </block>   
-    <!--文章结束-->
+    </block>
+  <!--文章结束-->
 </view>

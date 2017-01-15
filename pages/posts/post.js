@@ -5,11 +5,9 @@ Page({
     posts_content:[]
   },
   onLoad:function(options){
-      
       this.setData({
         posts_content:postsData.postLists
       })
-
   },
   onPullDownRefresh: function() {
     // 页面相关事件处理函数--监听用户下拉动作
@@ -17,7 +15,7 @@ Page({
   },
   onReachBottom: function() {
     // 页面上拉触底事件的处理函数
-    console.log("onReachBottom")
+    console.log("页面触底")
   },
   onShareAppMessage: function() {
     // 用户点击右上角分享
@@ -26,5 +24,13 @@ Page({
       desc: 'desc', // 分享描述
       path: 'path' // 分享路径
     }
+  },
+  onPostTap:function(e){
+    var postId = e.currentTarget.dataset.postid;
+    wx.navigateTo({
+      url: 'post-detail/post-detail',
+    })
+    console.log(e)
+    console.log(postId)
   }
 })

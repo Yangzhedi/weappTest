@@ -7,6 +7,7 @@ var local_database = [
         content: "菊黄蟹正肥，品尝秋之味。徐志摩把，“看初花的狄路”和“到楼外楼吃蟹”，并列为秋天来杭州不能错过的事情。",
         reading: "112",
         collection: "96",
+        postId: 0
     }, {
         date: "Nov 25 2016",
         title: "比利·林恩的中场故事",
@@ -15,6 +16,7 @@ var local_database = [
         content: "菊黄蟹正肥肥，品尝秋之味。徐志摩把把，“看初花的狄路”和和“到楼外楼吃蟹”，并列为秋天来杭州不能错过的事情。",
         reading: "112",
         collection: "96",
+        postId: 1
     }, {
         date: "Nov 25 2016",
         title: "比利·林恩的中场故事",
@@ -23,6 +25,7 @@ var local_database = [
         content: "菊黄蟹正肥肥，品尝秋之味。徐志摩把把，“看初花的狄路”和和“到楼外楼吃蟹”，并列为秋天来杭州不能错过的事情。",
         reading: "112",
         collection: "96",
+        postId: 2
     }, {
         date: "Nov 25 2016",
         title: "比利·林恩的中场故事",
@@ -31,6 +34,7 @@ var local_database = [
         content: "菊黄蟹正肥肥，品尝秋之味。徐志摩把把，“看初花的狄路”和和“到楼外楼吃蟹”，并列为秋天来杭州不能错过的事情。",
         reading: "112",
         collection: "96",
+        postId: 3
     }, {
         date: "Nov 25 2016",
         title: "比利·林恩的中场故事",
@@ -39,6 +43,7 @@ var local_database = [
         content: "菊黄蟹正肥肥，品尝秋之味。徐志摩把把，“看初花的狄路”和和“到楼外楼吃蟹”，并列为秋天来杭州不能错过的事情。",
         reading: "112",
         collection: "96",
+        postId: 4
     }
 ];
 
